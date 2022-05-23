@@ -21,27 +21,4 @@ if file_up is not None:
         data = pd.read_csv(file_up)
 st.write(data)
         
-""" 
-data = pd.read_csv('../input/chrome-reviews/chrome_reviews.csv')
-data= data.drop(['User Name'],axis=1)
-data= data.drop(['Developer Reply'],axis=1)
-data= data.drop(['Version'],axis=1)
-data= data.drop(['Review URL'],axis=1)
-data= data.drop(['Review Date'],axis=1)
-data= data.drop(['App ID'],axis=1)
-data = data[data.Star != 5]
-data = data[data.Star != 4]
-data = data[data.Star != 3]
-senti_list = []
-for i in data["Text"]:
-    score = TextBlob(i).sentiment[0]
-    if (score > 0):
-        senti_list.append('Positive')
-    elif (score < 0):
-        senti_list.append('Negative')
-    else:
-        senti_list.append('Neutral') 
-data["sentiment"]=senti_list
-data = data[data.sentiment == 'Positive']
-st.write("Hello")
-"""
+
