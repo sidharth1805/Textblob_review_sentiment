@@ -10,7 +10,7 @@ import string
 
 st.title("Data Visualzization App")
 file_up=st.sidebar.file_uploader(label="Upload your CSV",type=['csv'])
-st.text("##INPUT DATA")
+st.text("INPUT DATA")
 global data
 if file_up is not None:
     
