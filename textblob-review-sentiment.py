@@ -13,8 +13,7 @@ file_up=st.sidebar.file_uploader(label="Upload your CSV",type=['csv'])
 
 global data
 if file_up is not None:
-    print("Uploaded")
-
+    
     try:
         data = pd.read_csv(file_up)
     except Exception as e:
