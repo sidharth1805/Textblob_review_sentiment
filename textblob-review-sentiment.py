@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-#from nltk.tokenize import sent_tokenize
-#from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
 import re
 import string
-#from textblob import TextBlob
+from textblob import TextBlob
 
 #This is a py file
 
@@ -43,6 +43,5 @@ for i in data["Text"]:
         senti_list.append('Neutral') 
 data["sentiment"]=senti_list
 data = data[data.sentiment == 'Positive']
-
 st.write("Hello")
 """
