@@ -9,7 +9,6 @@ import string
 #This is a py file
 
 st.title("Data Visualzization App")
-st.set_options('depreciation.showfileUploaderEncoding',False)
 file_up=st.sidebar.file_uploader(label="Upload your CSV",type=['csv'])
 
 global data
